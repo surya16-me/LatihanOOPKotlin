@@ -1,0 +1,25 @@
+fun main() {
+    val hitter = Hitter("Hitter", 100, 80)
+    val magician = Magician("Magician", 80, 50)
+    val tanker = Tanker("Tanker", 200, 20)
+
+    println("===INIT===")
+    hitter.status()
+    println()
+    magician.status()
+    println()
+    tanker.status()
+    println()
+    println("===SCENE===")
+    magician.attack(hitter)
+    tanker.attack(hitter)
+    magician.attack(hitter)
+    println("===STATUS===")
+    println()
+    magician.status()
+    println()
+    hitter.status()
+    println()
+    tanker.status()
+
+}
